@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Ubuntu", sans-serif;
+  --font3: "Gotham", sans-serif;
+}
+
+html {
+  font-size: 1px;
+}
+
+body {
+  font-size: 16rem;
+  background: #171718;
+  color: white;
+  font-family: var(--font-family);
+}
+
+.container {
+  padding: 0 20rem;
+  max-width: 1196rem;
+  margin-inline: auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  color: white;
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32rem;
+}
+.header__links-a {
+  color: white;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.hero {
+  margin-top: 64rem;
+  margin-bottom: 128rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 140rem;
+}
+.hero__img {
+  border-radius: 8rem;
+  max-width: 448rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.hero__img img {
+  border-radius: inherit;
+}
+.hero__title {
+  margin-bottom: 24rem;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -0.5px;
+}
+.hero__desc, .hero__email {
+  font-size: 16rem;
+  line-height: 175%;
+  letter-spacing: 0.03em;
+}
+.hero__desc span, .hero__email span {
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+}
+.hero__email {
+  display: block;
+  color: #5C62EC;
+}
