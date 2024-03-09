@@ -1,0 +1,55 @@
+.skills {
+    padding-bottom: 124rem;
+    border-bottom: 1rem solid var(--bordes);
+    ;
+
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 34rem;
+        line-height: 118%;
+        letter-spacing: 0.01em;
+        margin-bottom: 60rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(354rem, 1fr));
+        gap: 24rem;
+
+        @include mobile-mini {
+            grid-template-columns: repeat(auto-fill, minmax(254rem, 1fr));
+        }
+    }
+
+    &__item {
+        background: var(--rellenos);
+        border-radius: 8rem;
+        padding: 24rem;
+
+        &__img,
+        &__title {
+            margin-bottom: 10rem;
+        }
+
+        &__img {
+            img {
+                width: 50rem;
+            }
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 34rem;
+            line-height: 118%;
+            letter-spacing: 0.01em;
+        }
+
+        &__desc {
+            font-weight: 400;
+            font-size: 16rem;
+            line-height: 175%;
+            letter-spacing: 0.03em;
+        }
+    }
+}

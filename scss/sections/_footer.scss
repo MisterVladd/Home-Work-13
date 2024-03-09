@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 64rem;
+    margin-bottom: 32rem;
+
+    &__info {
+        display: flex;
+        gap: 129rem;
+        padding-bottom: 64rem;
+        border-bottom: 1rem solid var(--bordes);
+        @include tablet{
+            gap: 50rem;
+            justify-content:center;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24rem;
+        }
+        }
+
+        &__logo {
+            a {
+                font-family: var(--second-family);
+                font-weight: 600;
+                font-size: 24rem;
+                line-height: 133%;
+                color: var(--blanco);
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 24rem;
+
+            &__social{
+                display: flex;
+                gap: 16rem;
+            }
+        }
+    }
+
+    &__year {
+        font-weight: 400;
+        font-size: 12rem;
+        line-height: 133%;
+        letter-spacing: 0.03em;
+        margin-top: 16rem;
+    }
+}
+
+.primary {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: var(--acento);
+}
